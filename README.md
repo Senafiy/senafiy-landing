@@ -90,7 +90,7 @@ cd landing-page
 git init
 git add .
 git commit -m "Senafiy landing page — coming soon"
-git remote add origin https://github.com/YOUR_ORG/senafiy-landing.git
+git remote add origin https://github.com/Senafiy/senafiy-landing.git
 git push -u origin main
 ```
 
@@ -98,7 +98,7 @@ Then in the GitHub repo:
 1. Go to **Settings → Pages**
 2. Source: **Deploy from a branch**
 3. Branch: `main`, folder: `/ (root)`
-4. Save — your page will be at `https://YOUR_ORG.github.io/senafiy-landing/`
+4. Save — your page will be at `https://Senafiy.github.io/senafiy-landing/`
 
 #### Step 2: Create the Google Site
 
@@ -110,7 +110,7 @@ Then in the GitHub repo:
 
 1. In the Google Sites editor, click **Insert → Embed**
 2. Choose **By URL**
-3. Paste your hosted URL (e.g., `https://YOUR_ORG.github.io/senafiy-landing/`)
+3. Paste your hosted URL (e.g., `https://Senafiy.github.io/senafiy-landing/`)
 4. Click **Insert**
 5. **Resize the embed** to fill the entire page:
    - Drag the corners to make it as large as possible
@@ -168,7 +168,7 @@ If Google Sites embedding is too restrictive:
 
 1. Deploy to GitHub Pages (see Step 1 above)
 2. In your domain registrar, set:
-   - CNAME: `www` → `YOUR_ORG.github.io`
+   - CNAME: `www` → `Senafiy.github.io`
    - A records for root domain:
      ```
      185.199.108.153
