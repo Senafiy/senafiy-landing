@@ -1,0 +1,9 @@
+# Confidential data files
+subscribers.csv
+subscribers.xls
+subscribers.json
+
+# Dependencies & system files
+node_modules/
+.DS_Store
+Thumbs.db

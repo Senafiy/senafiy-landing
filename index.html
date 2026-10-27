@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- ═══════════════════════════════════════════════════════════════════
+       Senafiy — Coming Soon Landing Page
+       For deployment on Google Sites (embed as full-page HTML)
+       Domain: senafiy.com | Contact: ops@senafiy.com
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ─── SEO Meta Tags ─── -->
+  <title>Senafiy - coming soon | سنافي - قريباً</title>
+  <meta name="description" content="Senafiy is a B2B operations platform for facility maintenance in Saudi Arabia. Execute work without a main contractor, and prove the saving. Launching soon.">
+  <meta name="keywords" content="Senafiy, facility maintenance, operations platform, B2B, Saudi Arabia, property management, work orders, vendor management, building maintenance, سنافي, صيانة المنشآت, إدارة العمليات">
+  <meta name="author" content="Senafiy">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://senafiy.com/">
+
+  <!-- ─── Open Graph (Facebook, LinkedIn) ─── -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://senafiy.com/">
+  <meta property="og:title" content="Senafiy - coming soon | سنافي - قريباً">
+  <meta property="og:description" content="Execute facility maintenance work without a main contractor, and prove the saving. A B2B platform built for Saudi Arabia. Launching soon.">
+  <meta property="og:image" content="https://senafiy.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:site_name" content="Senafiy">
+
+  <!-- ─── Twitter / X Card ─── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@senafiy">
+  <meta name="twitter:title" content="Senafiy - coming soon | سنافي - قريباً">
+  <meta name="twitter:description" content="Execute facility maintenance work without a main contractor, and prove the saving. Launching soon.">
+  <meta name="twitter:image" content="https://senafiy.com/og-image.png">
+
+  <!-- ─── Favicon ─── -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+  <!-- ─── Structured Data (JSON-LD) ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Senafiy",
+    "url": "https://senafiy.com",
+    "logo": "https://senafiy.com/assets/favicon.svg",
+    "description": "B2B operations platform for facility maintenance and fragmented multi-trade works in Saudi Arabia.",
+    "email": "ops@senafiy.com",
+    "sameAs": [
+      "https://www.linkedin.com/company/senafiy",
+      "https://x.com/senafiy",
+      "https://www.youtube.com/@senafiy",
+      "https://www.tiktok.com/@senafiy",
+      "https://www.snapchat.com/add/senafiy",
+      "https://wa.me/966548688019"
+    ],
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Saudi Arabia"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Saudi Arabia"
+    }
+  }
+  </script>
+
+  <!-- ─── Fonts ─── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ═══════════════════════════════════════════════════════
+       DESIGN SYSTEM — Senafiy Brand
+       Primary:  #144976 (navy)   / #8FB8DE (light blue)
+       Accent:   #5A707D (slate)  / #B8C6CF (mist)
+       ═══════════════════════════════════════════════════════ */
+    :root {
+      /* Brand colours */
+      --navy:       #144976;
+      --navy-deep:  #0C2E4A;
+      --blue-light: #8FB8DE;
+      --blue-glow:  #5B9BD5;
+      --slate:      #5A707D;
+      --mist:       #B8C6CF;
+      --ice:        #E8F0F8;
+
+      /* Neutrals */
+      --bg-dark:    #0F172A;
+      --bg-card:    #1E293B;
+      --bg-card-hover: #263548;
+      --text-primary:   #F1F5F9;
+      --text-secondary: #94A3B8;
+      --text-muted:     #64748B;
+
+      /* Spacing */
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --space-xl: 3rem;
+      --space-2xl: 5rem;
+
+      /* Typography */
+      --font-en: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-ar: 'Noto Kufi Arabic', 'Inter', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-en);
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ─── Animated Background ─── */
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background-image:
+        linear-gradient(rgba(20,73,118,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,73,118,0.08) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: gridShift 20s linear infinite;
+    }
+
+    @keyframes gridShift {
+      0%   { background-position: 0 0; }
+      100% { background-position: 60px 60px; }
+    }
+
+    .bg-gradient {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(20,73,118,0.35), transparent 70%),
+        radial-gradient(ellipse 60% 50% at 80% 100%, rgba(90,112,125,0.15), transparent 60%);
+      pointer-events: none;
+    }
+
+    /* ─── Main Layout ─── */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ─── Navigation ─── */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-md) var(--space-lg);
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      text-decoration: none;
+    }
+
+    .nav__logo-mark {
+      width: 40px;
+      height: 40px;
+    }
+
+    .nav__logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+    }
+
+    .nav__logo-text span {
+      color: var(--blue-light);
+    }
+
+    .nav__lang {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      background: var(--bg-card);
+      border: 1px solid rgba(143,184,222,0.15);
+      border-radius: 8px;
+      padding: 6px 14px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav__lang:hover {
+      border-color: var(--blue-light);
+      color: var(--blue-light);
+    }
+
+    /* ─── Hero Section ─── */
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: var(--space-xl) var(--space-lg);
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Status badge */
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(143,184,222,0.1);
+      border: 1px solid rgba(143,184,222,0.25);
+      border-radius: 50px;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      color: var(--blue-light);
+      margin-bottom: var(--space-lg);
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .hero__badge-dot {
+      width: 8px;
+      height: 8px;
+      background: #34D399;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    /* Heading */
+    .hero__title {
+      font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: var(--space-md);
+      animation: fadeInUp 0.8s ease-out 0.1s both;
+    }
+
+    .hero__title-gradient {
+      background: linear-gradient(135deg, var(--blue-light) 0%, var(--blue-glow) 50%, var(--mist) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Subtitle */
+    .hero__subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin-bottom: var(--space-xl);
+      line-height: 1.8;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+    }
+
+    /* Arabic subtitle */
+    .hero__subtitle-ar {
+      font-family: var(--font-ar);
+      direction: rtl;
+      font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+      color: var(--text-muted);
+      margin-top: var(--space-sm);
+      line-height: 2;
+    }
+
+    /* ─── Countdown Timer ─── */
+    .countdown {
+      display: flex;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+      animation: fadeInUp 0.8s ease-out 0.3s both;
+    }
+
+    .countdown__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 80px;
+    }
+
+    .countdown__number {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--blue-light);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      background: var(--bg-card);
+      border: 1px solid rgba(143,184,222,0.15);
+      border-radius: 12px;
+      padding: 16px 20px;
+      min-width: 80px;
+      text-align: center;
+      transition: border-color 0.3s;
+    }
+
+    .countdown__item:hover .countdown__number {
+      border-color: var(--blue-light);
+    }
+
+    .countdown__label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    /* ─── Notify Form ─── */
+    .notify {
+      animation: fadeInUp 0.8s ease-out 0.4s both;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .notify__form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: var(--space-sm);
+    }
+
+    .notify__input {
+      flex: 1;
+      padding: 14px 20px;
+      background: var(--bg-card);
+      border: 1px solid rgba(143,184,222,0.2);
+      border-radius: 12px;
+      color: var(--text-primary);
+      font-family: var(--font-en);
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .notify__input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .notify__input:focus {
+      border-color: var(--blue-light);
+      box-shadow: 0 0 0 3px rgba(143,184,222,0.1);
+    }
+
+    .notify__btn {
+      padding: 14px 28px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--blue-glow) 100%);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-family: var(--font-en);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .notify__btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(20,73,118,0.4);
+    }
+
+    .notify__btn:active {
+      transform: translateY(0);
+    }
+
+    .notify__hint {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .notify__success {
+      display: none;
+      padding: 14px 20px;
+      background: rgba(52,211,153,0.1);
+      border: 1px solid rgba(52,211,153,0.3);
+      border-radius: 12px;
+      color: #34D399;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    /* ─── Features Grid ─── */
+    .features {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg) var(--space-2xl);
+      width: 100%;
+    }
+
+    .features__title {
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+      margin-bottom: var(--space-xl);
+    }
+
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-md);
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(143,184,222,0.08);
+      border-radius: 16px;
+      padding: var(--space-lg);
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      border-color: rgba(143,184,222,0.25);
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+    }
+
+    .feature-card__icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(143,184,222,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-sm);
+      font-size: 1.5rem;
+    }
+
+    .feature-card__title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .feature-card__desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ─── Visitor Counter ─── */
+    .visitor-counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: var(--space-sm) 0;
+      margin-bottom: var(--space-lg);
+      animation: fadeInUp 0.8s ease-out 0.5s both;
+    }
+
+    .visitor-counter__icon {
+      font-size: 1.1rem;
+    }
+
+    .visitor-counter__text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .visitor-counter__number {
+      color: var(--blue-light);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      font-size: 1.1rem;
+    }
+
+    /* ─── Social Links ─── */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+      animation: fadeInUp 0.8s ease-out 0.6s both;
+    }
+
+    .social__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid rgba(143,184,222,0.12);
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social__link:hover {
+      border-color: var(--blue-light);
+      color: var(--blue-light);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(20,73,118,0.25);
+    }
+
+    .social__link svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    /* ─── Footer ─── */
+    .footer {
+      text-align: center;
+      padding: var(--space-lg);
+      border-top: 1px solid rgba(143,184,222,0.08);
+    }
+
+    .footer__email {
+      color: var(--blue-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    .footer__email:hover {
+      opacity: 0.8;
+    }
+
+    .footer__copy {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    /* ─── Animations ─── */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ─── Floating particles ─── */
+    .particles {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      opacity: 0;
+      animation: float linear infinite;
+    }
+
+    @keyframes float {
+      0%   { opacity: 0; transform: translateY(100vh) scale(0); }
+      10%  { opacity: 0.4; }
+      90%  { opacity: 0.1; }
+      100% { opacity: 0; transform: translateY(-10vh) scale(1); }
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 640px) {
+      .nav {
+        padding: var(--space-sm);
+      }
+
+      .hero {
+        padding: var(--space-lg) var(--space-sm);
+      }
+
+      .countdown {
+        gap: var(--space-xs);
+      }
+
+      .countdown__number {
+        min-width: 64px;
+        padding: 12px 14px;
+      }
+
+      .notify__form {
+        flex-direction: column;
+      }
+
+      .notify__btn {
+        width: 100%;
+      }
+
+      .social {
+        gap: var(--space-sm);
+      }
+
+      .features {
+        padding: var(--space-lg) var(--space-sm);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="page-wrapper">
+
+    <!-- ═══ Navigation ═══ -->
+    <nav class="nav">
+      <a href="/" class="nav__logo" aria-label="Senafiy Home">
+        <img src="assets/favicon.svg" alt="Senafiy" class="nav__logo-mark" width="40" height="40">
+        <div class="nav__logo-text"><span>S</span>enafiy</div>
+      </a>
+      <button class="nav__lang" onclick="toggleLang()" aria-label="Switch language">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span id="langLabel">العربية</span>
+      </button>
+    </nav>
+
+    <!-- ═══ Hero ═══ -->
+    <main class="hero">
+
+      <!-- Status badge -->
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        <span id="badgeText">Under Development — Launching Soon</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="hero__title">
+        <span id="titleLine1">Operations, Without the</span><br>
+        <span class="hero__title-gradient" id="titleLine2">Main Contractor</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero__subtitle" id="subtitleEn">
+        Senafiy is a B2B operations platform that lets facility owners in Saudi Arabia
+        execute maintenance and multi-trade work directly — organise, sequence, source,
+        and prove the saving.
+      </p>
+      <p class="hero__subtitle hero__subtitle-ar" id="subtitleAr">
+        سنافي هي منصة عمليات B2B تمكّن مُلّاك المنشآت في المملكة العربية السعودية
+        من تنفيذ أعمال الصيانة والحِرف المتعددة مباشرة — تنظيم، ترتيب، توريد، وإثبات التوفير.
+      </p>
+
+      <!-- Countdown timer -->
+      <div class="countdown" aria-label="Launch countdown">
+        <div class="countdown__item">
+          <div class="countdown__number" id="days">--</div>
+          <div class="countdown__label" id="daysLabel">Days</div>
+        </div>
+        <div class="countdown__item">
+          <div class="countdown__number" id="hours">--</div>
+          <div class="countdown__label" id="hoursLabel">Hours</div>
+        </div>
+        <div class="countdown__item">
+          <div class="countdown__number" id="minutes">--</div>
+          <div class="countdown__label" id="minutesLabel">Minutes</div>
+        </div>
+        <div class="countdown__item">
+          <div class="countdown__number" id="seconds">--</div>
+          <div class="countdown__label" id="secondsLabel">Seconds</div>
+        </div>
+      </div>
+
+      <!-- Notification form -->
+      <div class="notify">
+        <form class="notify__form" id="notifyForm" onsubmit="handleNotify(event)">
+          <input
+            type="email"
+            class="notify__input"
+            id="emailInput"
+            placeholder="Enter your email for early access"
+            required
+            aria-label="Email address"
+          >
+          <button type="submit" class="notify__btn" id="notifyBtn">Notify Me</button>
+        </form>
+        <p class="notify__hint" id="notifyHint">
+          Be the first to know when we launch. No spam, ever.
+        </p>
+        <div class="notify__success" id="notifySuccess">
+          ✓ You're on the list! We'll notify you when Senafiy launches.
+        </div>
+      </div>
+
+      <!-- Visitor counter -->
+      <div class="visitor-counter">
+        <span class="visitor-counter__icon">👁</span>
+        <span class="visitor-counter__text" id="visitorLabel">Visitors since launch:</span>
+        <span class="visitor-counter__number" id="visitorCount">0</span>
+      </div>
+
+      <!-- Social media links -->
+      <div class="social">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/senafiy" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <!-- X (Twitter) -->
+        <a href="https://x.com/senafiy" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="X (Twitter)" title="X">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@senafiy" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="YouTube" title="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@senafiy" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="TikTok" title="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+        <!-- Snapchat -->
+        <a href="https://www.snapchat.com/add/senafiy" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Snapchat" title="Snapchat">
+          <svg viewBox="0 0 24 24"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12.998-.262.175-.074.349-.074.523.007.174.082.29.223.34.39.1.312-.036.652-.288.812-.13.082-.276.16-.416.226-.47.22-1.124.39-1.366.643-.24.262-.35.636-.291 1.011.13.853.675 1.692 1.246 2.41.776.975 1.697 1.67 2.366 2.033.33.178.608.36.74.602.187.355.08.715-.044.925-.306.51-.954.712-1.6.886-.267.071-.534.145-.765.245-.516.22-.79.491-.917.85-.062.172-.13.404-.13.62 0 .136.022.225.04.277-.04.156-.098.37-.27.548-.28.292-.75.487-1.396.58-.65.095-1.19.186-1.715.333-.516.148-.962.365-1.362.636-.768.52-1.531.822-2.379.822-.06 0-.12-.003-.181-.008-.059.005-.117.008-.177.008-.849 0-1.612-.302-2.38-.822-.4-.27-.846-.488-1.362-.636-.524-.147-1.065-.238-1.715-.333-.647-.093-1.116-.288-1.396-.58-.172-.178-.23-.392-.27-.548.018-.052.04-.141.04-.277 0-.216-.068-.448-.13-.62-.127-.359-.4-.63-.917-.85-.231-.1-.498-.174-.765-.245-.647-.174-1.294-.376-1.6-.886-.124-.21-.23-.57-.044-.925.132-.242.41-.424.74-.602.67-.362 1.59-1.058 2.365-2.032.572-.718 1.117-1.557 1.247-2.41.059-.376-.052-.75-.292-1.012-.241-.252-.895-.422-1.365-.643-.14-.065-.286-.143-.416-.225-.252-.16-.388-.5-.287-.812.046-.169.166-.309.34-.39.174-.082.348-.082.523-.008.34.143.698.278.998.262.198 0 .326-.045.401-.09-.008-.165-.018-.33-.03-.51l-.003-.06c-.104-1.628-.23-3.654.3-4.847C7.86 1.069 11.216.793 12.206.793z"/></svg>
+        </a>
+        <!-- WhatsApp Business -->
+        <a href="https://wa.me/966548688019" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="WhatsApp Business" title="WhatsApp Business">
+          <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.551 4.095 1.517 5.824l-1.609 5.874 6.046-1.587c1.768 1.042 3.829 1.644 6.03 1.644 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+
+    </main>
+
+    <!-- ═══ Features ═══ -->
+    <section class="features" aria-label="Platform features">
+      <h2 class="features__title" id="featuresTitle">What We're Building</h2>
+      <div class="features__grid">
+
+        <div class="feature-card">
+          <div class="feature-card__icon">📋</div>
+          <h3 class="feature-card__title" id="f1Title">Work Order Management</h3>
+          <p class="feature-card__desc" id="f1Desc">
+            Break complex maintenance into sequenced tasks across trades,
+            with dependency tracking and real-time progress.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🏢</div>
+          <h3 class="feature-card__title" id="f2Title">Facility & Asset Registry</h3>
+          <p class="feature-card__desc" id="f2Desc">
+            Organise properties, buildings, and assets in a structured registry
+            with role-based access for every team member.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">💰</div>
+          <h3 class="feature-card__title" id="f3Title">Prove the Saving</h3>
+          <p class="feature-card__desc" id="f3Desc">
+            Every job produces one number: what it cost versus the contractor's quote.
+            Credible, auditable, automatic.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🔧</div>
+          <h3 class="feature-card__title" id="f4Title">Direct Vendor Sourcing</h3>
+          <p class="feature-card__desc" id="f4Desc">
+            Source materials and trades directly. Compare quotes, assign work,
+            and manage payments — no middleman.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">📱</div>
+          <h3 class="feature-card__title" id="f5Title">Technician Mobile App</h3>
+          <p class="feature-card__desc" id="f5Desc">
+            Offline-first PWA for technicians on-site. Submit proof of work,
+            update task status, even without connectivity.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🇸🇦</div>
+          <h3 class="feature-card__title" id="f6Title">Built for Saudi Arabia</h3>
+          <p class="feature-card__desc" id="f6Desc">
+            Arabic-first interface, data hosted in Riyadh, aligned with local
+            regulations, and designed around the way Saudi facilities actually operate.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer class="footer">
+      <a href="mailto:ops@senafiy.com" class="footer__email">ops@senafiy.com</a>
+      <p class="footer__copy">© <span id="footerYear">2026</span> Senafiy. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // ═══════════════════════════════════════════════════════
+    // COUNTDOWN TIMER
+    // Set your target launch date here
+    // ═══════════════════════════════════════════════════════
+    const LAUNCH_DATE = new Date('2027-01-01T00:00:00+03:00'); // Launch date: 1 January 2027
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = LAUNCH_DATE - now;
+
+      if (diff <= 0) {
+        document.getElementById('days').textContent = '0';
+        document.getElementById('hours').textContent = '0';
+        document.getElementById('minutes').textContent = '0';
+        document.getElementById('seconds').textContent = '0';
+        return;
+      }
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent    = String(d).padStart(2, '0');
+      document.getElementById('hours').textContent   = String(h).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ═══════════════════════════════════════════════════════
+    // VISITOR COUNTER (localStorage-based)
+    // For production, replace with a server-side counter or
+    // a service like CountAPI
+    // ═══════════════════════════════════════════════════════
+    function initVisitorCounter() {
+      const STORAGE_KEY = 'senafiy_visitor_count';
+      const VISITED_KEY = 'senafiy_has_visited';
+
+      let count = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
+
+      // Only increment if this is a new visitor (session)
+      if (!sessionStorage.getItem(VISITED_KEY)) {
+        count++;
+        localStorage.setItem(STORAGE_KEY, String(count));
+        sessionStorage.setItem(VISITED_KEY, '1');
+      }
+
+      // Animate the counter
+      const el = document.getElementById('visitorCount');
+      animateNumber(el, 0, count, 1500);
+    }
+
+    function animateNumber(el, start, end, duration) {
+      const range = end - start;
+      const startTime = performance.now();
+
+      function step(current) {
+        const elapsed = current - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(start + range * eased).toLocaleString();
+        if (progress < 1) requestAnimationFrame(step);
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    initVisitorCounter();
+
+    // ═══════════════════════════════════════════════════════
+    // NOTIFICATION FORM + GOOGLE DRIVE SYNC
+    // - Submissions are sent privately to your Google Drive / Google Sheets
+    // - No subscriber lists or download links are exposed on the client side
+    // ═══════════════════════════════════════════════════════
+    const GOOGLE_SHEET_WEBHOOK_URL = ''; // ضع هنا رابط Google Apps Script الخاص بك
+
+    function handleNotify(e) {
+      e.preventDefault();
+      const email = document.getElementById('emailInput').value.trim();
+      if (!email) return;
+
+      const payload = {
+        email: email,
+        date: new Date().toISOString().replace('T', ' ').slice(0, 19),
+        source: document.referrer || 'Landing Page Direct',
+        lang: currentLang
+      };
+
+      // 1. إرسال سري ومشفر ومباشر إلى Google Sheets / Google Drive
+      if (GOOGLE_SHEET_WEBHOOK_URL) {
+        fetch(GOOGLE_SHEET_WEBHOOK_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }).catch(() => {});
+      }
+
+      // 2. إرسال إلى خادم الواجهة الخلفية الخاص إن وُجد
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).catch(() => {});
+
+      // إظهار رسالة النجاح وإخفاء النموذج فوراً
+      document.getElementById('notifyForm').style.display = 'none';
+      document.getElementById('notifyHint').style.display = 'none';
+      document.getElementById('notifySuccess').style.display = 'block';
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // FLOATING PARTICLES
+    // ═══════════════════════════════════════════════════════
+    function createParticles() {
+      const container = document.getElementById('particles');
+      const count = 20;
+
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement('div');
+        p.classList.add('particle');
+        p.style.left = Math.random() * 100 + '%';
+        p.style.animationDuration = (8 + Math.random() * 12) + 's';
+        p.style.animationDelay = Math.random() * 10 + 's';
+        p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+        container.appendChild(p);
+      }
+    }
+
+    createParticles();
+
+    // ═══════════════════════════════════════════════════════
+    // LANGUAGE TOGGLE (EN ↔ AR)
+    // ═══════════════════════════════════════════════════════
+    let currentLang = 'en';
+
+    const translations = {
+      ar: {
+        langLabel: 'English',
+        badgeText: 'تحت التطوير — الإطلاق قريباً',
+        titleLine1: 'العمليات، بدون',
+        titleLine2: 'المقاول الرئيسي',
+        subtitleEn: '',
+        subtitleAr: 'سنافي هي منصة عمليات B2B تمكّن مُلّاك المنشآت في المملكة العربية السعودية من تنفيذ أعمال الصيانة والحِرف المتعددة مباشرة — تنظيم، ترتيب، توريد، وإثبات التوفير.',
+        daysLabel: 'أيام',
+        hoursLabel: 'ساعات',
+        minutesLabel: 'دقائق',
+        secondsLabel: 'ثوان',
+        emailPlaceholder: 'أدخل بريدك الإلكتروني للوصول المبكر',
+        notifyBtn: 'أعلمني',
+        notifyHint: 'كن أول من يعلم عند الإطلاق. بدون إزعاج، أبداً.',
+        notifySuccess: '✓ أنت في القائمة! سنبلغك عند إطلاق سنافي.',
+        visitorLabel: 'الزوار منذ الإطلاق:',
+        featuresTitle: 'ما الذي نبنيه',
+        f1Title: 'إدارة أوامر العمل', f1Desc: 'تقسيم الصيانة المعقدة إلى مهام متسلسلة عبر الحِرف، مع تتبع التبعيات والتقدم الفوري.',
+        f2Title: 'سجل المنشآت والأصول', f2Desc: 'تنظيم العقارات والمباني والأصول في سجل منظم مع صلاحيات مبنية على الأدوار لكل عضو في الفريق.',
+        f3Title: 'إثبات التوفير', f3Desc: 'كل مهمة تنتج رقماً واحداً: ما تكلفته مقابل عرض المقاول. موثوق، قابل للتدقيق، تلقائي.',
+        f4Title: 'توريد مباشر من المزوّدين', f4Desc: 'استورد المواد والحِرف مباشرة. قارن العروض، أسند العمل، وأدر المدفوعات — بدون وسيط.',
+        f5Title: 'تطبيق الفني المتنقل', f5Desc: 'تطبيق PWA يعمل بدون إنترنت للفنيين في الموقع. أرسل إثبات العمل وحدّث حالة المهمة.',
+        f6Title: 'مبني للسعودية', f6Desc: 'واجهة عربية أولاً، بيانات مستضافة في الرياض، متوافق مع الأنظمة المحلية، ومصمم حول طريقة عمل المنشآت السعودية فعلياً.',
+      },
+      en: {
+        langLabel: 'العربية',
+        badgeText: 'Under Development — Launching Soon',
+        titleLine1: 'Operations, Without the',
+        titleLine2: 'Main Contractor',
+        subtitleEn: 'Senafiy is a B2B operations platform that lets facility owners in Saudi Arabia execute maintenance and multi-trade work directly — organise, sequence, source, and prove the saving.',
+        subtitleAr: 'سنافي هي منصة عمليات B2B تمكّن مُلّاك المنشآت في المملكة العربية السعودية من تنفيذ أعمال الصيانة والحِرف المتعددة مباشرة — تنظيم، ترتيب، توريد، وإثبات التوفير.',
+        daysLabel: 'Days',
+        hoursLabel: 'Hours',
+        minutesLabel: 'Minutes',
+        secondsLabel: 'Seconds',
+        emailPlaceholder: 'Enter your email for early access',
+        notifyBtn: 'Notify Me',
+        notifyHint: 'Be the first to know when we launch. No spam, ever.',
+        notifySuccess: "✓ You're on the list! We'll notify you when Senafiy launches.",
+        visitorLabel: 'Visitors since launch:',
+        featuresTitle: 'What We\'re Building',
+        f1Title: 'Work Order Management', f1Desc: 'Break complex maintenance into sequenced tasks across trades, with dependency tracking and real-time progress.',
+        f2Title: 'Facility & Asset Registry', f2Desc: 'Organise properties, buildings, and assets in a structured registry with role-based access for every team member.',
+        f3Title: 'Prove the Saving', f3Desc: 'Every job produces one number: what it cost versus the contractor\'s quote. Credible, auditable, automatic.',
+        f4Title: 'Direct Vendor Sourcing', f4Desc: 'Source materials and trades directly. Compare quotes, assign work, and manage payments — no middleman.',
+        f5Title: 'Technician Mobile App', f5Desc: 'Offline-first PWA for technicians on-site. Submit proof of work, update task status, even without connectivity.',
+        f6Title: 'Built for Saudi Arabia', f6Desc: 'Arabic-first interface, data hosted in Riyadh, aligned with local regulations, and designed around the way Saudi facilities actually operate.',
+      }
+    };
+
+    function toggleLang() {
+      currentLang = currentLang === 'en' ? 'ar' : 'en';
+      const t = translations[currentLang];
+      const html = document.documentElement;
+
+      html.lang = currentLang;
+      html.dir  = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+      // Update text content
+      for (const [id, text] of Object.entries(t)) {
+        const el = document.getElementById(id);
+        if (el) {
+          if (el.tagName === 'INPUT') el.placeholder = text;
+          else el.textContent = text;
+        }
+      }
+
+      // Show/hide subtitles
+      document.getElementById('subtitleEn').style.display = currentLang === 'ar' ? 'none' : '';
+
+      // Update font for Arabic
+      if (currentLang === 'ar') {
+        document.body.style.fontFamily = "var(--font-ar)";
+      } else {
+        document.body.style.fontFamily = "var(--font-en)";
+      }
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // FOOTER YEAR
+    // ═══════════════════════════════════════════════════════
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
